@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { User } from "./user.type";
 import { userService } from "./user.service";
+import logger from "../../utils/logger";
 
 const addUser = async (req: Request, res: Response) => {
     try {
@@ -9,6 +10,7 @@ const addUser = async (req: Request, res: Response) => {
         const user = await userService.create(newUser)
         res.status(201).json(user)
     } catch (error) {
+        logger.error("Error creating user", error)
         res.status(500).json({ message: "Error creating user", error });
 
     }
@@ -19,6 +21,7 @@ const getUsers = async (req: Request, res: Response) => {
         const users = await userService.findAll();
         res.status(201).json(users)
     } catch (error) {
+        logger.error("Error getting users", error)
         res.status(500).json({ message: "Error creating user", error });
     }
 }
