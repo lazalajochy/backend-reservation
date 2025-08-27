@@ -1,7 +1,7 @@
 import express, { Application } from "express";
 import { env } from "./config/env";
 import { globalMiddlewares } from "./middlewares/globalMiddlewares";
-
+import logger from "./utils/logger";
 
 const app: Application = express();
 
@@ -10,5 +10,5 @@ globalMiddlewares.forEach((middleware) => {
 })
 
 app.listen(env.PORT, () => {
-    console.log(`🚀 App running on port: ${env.PORT}`);
+    logger.info(`🚀 App running on port: ${env.PORT}`);
 });

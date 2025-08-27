@@ -9,3 +9,4 @@ Invalid `prisma.user.create()` invocation in
   5     create: async (data: User) => {
 → 6         return prisma.user.create(
 Unique constraint failed on the fields: (`email`) {"body":{"email":"jlazala@gmail.com","lastName":"lazala","name":"jochy","password":"12345"},"timestamp":"2025-08-27T03:10:57.368Z"}
+info: 🚀 App running on port: 4000 {"timestamp":"2025-08-27T03:16:06.734Z"}
