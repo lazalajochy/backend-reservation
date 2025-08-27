@@ -1,0 +1,11 @@
+error: Error creating user {"body":{"email":"jlazala@gmail.com","lastName":"lazala","name":"jochy","password":"12345"},"error":{"clientVersion":"6.14.0","code":"P2002","meta":{"modelName":"User","target":["email"]},"name":"PrismaClientKnownRequestError"},"timestamp":"2025-08-27T03:05:23.800Z"}
+error: Error creating user {"body":{"email":"jlazala@gmail.com","lastName":"lazala","name":"jochy","password":"12345"},"error":{"clientVersion":"6.14.0","code":"P2002","meta":{"modelName":"User","target":["email"]},"name":"PrismaClientKnownRequestError"},"timestamp":"2025-08-27T03:05:29.806Z"}
+error: Error creating user 
+Invalid `prisma.user.create()` invocation in
+/Users/joserosario/Desktop/backend-reservation/src/modules/user/user.service.ts:6:28
+
+  3 
+  4 export const userService = {
+  5     create: async (data: User) => {
+→ 6         return prisma.user.create(
+Unique constraint failed on the fields: (`email`) {"body":{"email":"jlazala@gmail.com","lastName":"lazala","name":"jochy","password":"12345"},"timestamp":"2025-08-27T03:10:57.368Z"}
