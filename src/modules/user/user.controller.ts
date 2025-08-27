@@ -2,11 +2,11 @@ import { Request, Response } from "express";
 import { User } from "./user.type";
 import { userService } from "./user.service";
 import logger from "../../utils/logger";
+import argon2 from "argon2"
 
 const addUser = async (req: Request, res: Response): Promise<void> => {
     try {
         const { name, lastName, email, password } = req.body;
-
         const requiredFields = ["name", "lastName", "email", "password"];
         const missingFields = requiredFields.filter(field => !req.body[field]);
         if (missingFields.length) {
@@ -18,6 +18,8 @@ const addUser = async (req: Request, res: Response): Promise<void> => {
             return;
         }
 
+        const hashedPassowd = await argon2.hash(password)
+
         const existingUser = await userService.findByEmail(email);
         if (existingUser) {
             res.status(409).json({
@@ -27,7 +29,7 @@ const addUser = async (req: Request, res: Response): Promise<void> => {
             return;
         }
 
-        const newUser: User = { name, lastName, email, password };
+        const newUser: User = { name, lastName, email, password: hashedPassowd };
         const createdUser = await userService.create(newUser);
 
         res.status(201).json({
