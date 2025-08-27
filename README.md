@@ -6,6 +6,10 @@ Este proyecto fue generado automáticamente por la extensión **README Generator
 ## ⚙️ Tecnologías
 Express, Prisma
 
+## 📜 Scripts disponibles
+- `test`
+- `dev`
+
 ## 📂 Estructura del proyecto
 ```
 📄 .env
@@ -19,7 +23,7 @@ Express, Prisma
 📂 prisma
   📂 migrations
     📂 20250827005757_init
-
+      📄 migration.sql
     📄 migration_lock.toml
   📄 schema.prisma
 📂 src
@@ -32,13 +36,16 @@ Express, Prisma
     📄 globalMiddlewares.ts
   📂 modules
     📂 auth
-
+      📄 auth.controller.ts
     📂 user
-
+      📄 user.controller.ts
+      📄 user.service.ts
+      📄 user.type.ts
   📂 route
     📄 index.ts
     📄 user.ts
   📂 utils
     📄 logger.ts
 📄 tsconfig.json
+
 ```
