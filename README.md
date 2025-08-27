@@ -4,7 +4,7 @@
 Este proyecto fue generado automáticamente por la extensión **README Generator**.
 
 ## ⚙️ Tecnologías
-Express, Prisma
+Express, Prisma, TypeScript
 
 ## 📜 Scripts disponibles
 - `test`
