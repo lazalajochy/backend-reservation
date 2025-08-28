@@ -4,11 +4,12 @@
 Este proyecto fue generado automáticamente por la extensión **README Generator**.
 
 ## ⚙️ Tecnologías
-Express, Prisma, TypeScript
+TypeScript, Express, Prisma, TypeScript, dotenv
 
 ## 📜 Scripts disponibles
 - `test`
 - `dev`
+- `start`
 
 ## 📂 Estructura del proyecto
 ```
