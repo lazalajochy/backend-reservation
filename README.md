@@ -15,12 +15,17 @@ Express, Prisma, dotenv
 
 
 ## ⚙️ Dev  stack technologies 
-@types/dotenv, @types/express, nodemon, typescript, docker-compose
+@types/dotenv, @types/express, nodemon, typescript
 
 ## 📜 Scripts available
 - `test`
 - `dev`
 - `start`
+
+
+## 🌐 Deployment & Infrastructure
+docker compose 
+
 
 ## 📂 Project structure
 ```
