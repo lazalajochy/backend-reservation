@@ -3,8 +3,12 @@
 ## 📖 Descripción
 Este proyecto fue generado automáticamente por la extensión **README Generator**.
 
-## ⚙️ Tecnologías
+## ⚙️ Tecnologías de produccion
 TypeScript, Express, Prisma, TypeScript, dotenv
+
+
+## ⚙️ Tecnologías de desarrollo
+Nodemon
 
 ## 📜 Scripts disponibles
 - `test`
