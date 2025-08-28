@@ -4,7 +4,7 @@
 ## 📜 License: ISC
 
 
-## Requirements
+## 🛠️ Basic requirements
 - `nodejs >= v18.20.8`
 - `npm >= 10.8.2`
 - `git >= git version 2.49.0`
