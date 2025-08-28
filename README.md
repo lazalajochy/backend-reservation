@@ -4,11 +4,11 @@
 Este proyecto fue generado automáticamente por la extensión **README Generator**.
 
 ## ⚙️ Tecnologías de produccion
-TypeScript, Express, Prisma, TypeScript, dotenv
+Express, Prisma, dotenv
 
 
 ## ⚙️ Tecnologías de desarrollo
-Nodemon
+docker-compose, Nodemon
 
 ## 📜 Scripts disponibles
 - `test`
