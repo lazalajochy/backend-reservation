@@ -24,7 +24,15 @@ Express, Prisma, dotenv
 
 
 ## 🌐 Deployment & Infrastructure
-docker compose 
+Docker Compose, Environment Variables 
+
+
+## Clone repository
+
+## Clone repository
+```bash
+git clone https://github.com/lazalajochy/backend-reservation.git
+```
 
 
 ## 📂 Project structure
