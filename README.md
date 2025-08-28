@@ -1,7 +1,8 @@
 # backend-reservation
 
-## backend-reservation
-
+		
+## Version: 1.0.0
+		
 ## 📖 Descripción
 Este proyecto fue generado automáticamente por la extensión **README Generator**.
 
