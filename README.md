@@ -3,7 +3,9 @@
 		
 
 		
-## Version: 1.0.0
+## 🏷 Version: 1.0.0
+
+## license: ISC
 		
 ## 📖 Descripción
 Este proyecto fue generado automáticamente por la extensión **README Generator**.
