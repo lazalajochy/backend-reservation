@@ -51,23 +51,38 @@ git clone https://github.com/lazalajochy/backend-reservation.git
 
 
 ## 📂 Project structure
-📄 README.md
-📄 combined.log
-📄 docker-compose.yml
-📄 error.log
-📄 package-lock.json
-📄 package.json
-📂 prisma
-  📂 migrations
-  📄 schema.prisma
-📂 src
-  📄 app.ts
-  📂 config
-  📂 database
-  📂 middlewares
-  📂 modules
-  📂 route
-  📂 utils
-📄 tsconfig.json
+    📄 README.md
+    📄 combined.log
+    📄 docker-compose.yml
+    📄 error.log
+    📄 package-lock.json
+    📄 package.json
+    📂 prisma
+      📂 migrations
+        📂 20250827005757_init
+          📄 migration.sql
+        📄 migration_lock.toml
+      📄 schema.prisma
+    📂 src
+      📄 app.ts
+      📂 config
+        📄 env.ts
+      📂 database
+        📄 prisma.ts
+      📂 middlewares
+        📄 globalMiddlewares.ts
+      📂 modules
+        📂 auth
+          📄 auth.controller.ts
+        📂 user
+          📄 user.controller.ts
+          📄 user.service.ts
+          📄 user.type.ts
+      📂 route
+        📄 index.ts
+        📄 user.ts
+      📂 utils
+        📄 logger.ts
+    📄 tsconfig.json
 
 
